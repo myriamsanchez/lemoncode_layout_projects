@@ -15,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/myriamsanchez/lemoncode_projects/issues"
   },
-  "homepage": "https://github.com/myriamsanchez/lemoncode_projects#readme"
+  "homepage": "https://github.com/myriamsanchez/lemoncode_projects#readme",
+  "dependencies": {}
 }

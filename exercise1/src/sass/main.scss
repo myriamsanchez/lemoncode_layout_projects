@@ -1,0 +1,28 @@
+@import "reset.scss";
+@import "layout.scss";
+
+$color: yellow;
+
+body {
+    font-family: Arial;
+    display: flex;
+    flex-direction: row;
+    // align-items: center;
+    @include base-layout-definition();
+    @include darken-color($color, 4);
+    @include lighten-color($color, 4);
+}
+
+div {
+    min-height: 20vh;
+    min-width: 10vh;
+    color: white;
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+    display: flex;
+    align-items: center;
+}
+
+.color-base {
+    background-color: $color;
+}

@@ -1,0 +1,31 @@
+@mixin base-layout-definition () {
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+@mixin centerer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+@mixin darken-color($color, $columns: 1) {
+    $percentage: 10%;
+    @for $colIndex from 1 through $columns {
+        .color-darken-#{$colIndex} {
+            background-color: darken($color, $percentage);
+            $percentage: $percentage + 10;
+        }
+    }
+ }
+
+ @mixin lighten-color($color, $columns: 1) {
+    $percentage: 10%;
+    @for $colIndex from 1 through $columns {
+        .color-lighten-#{$colIndex} {
+            background-color: lighten($color, $percentage);
+            $percentage: $percentage + 10;
+        }
+    }
+ }

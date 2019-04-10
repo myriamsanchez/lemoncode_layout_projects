@@ -1,0 +1,17 @@
+// @import 'theme_a';
+// @import 'theme_b';
+
+
+.main-container {
+    padding: 1em;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: large;
+    div {
+        padding: 0.5em 0.2em 0 1em;
+        border-width: 0.15em;
+        border-style: solid;
+        border-color: gray;
+        width: 6em;
+        height: 5em;
+    }
+}

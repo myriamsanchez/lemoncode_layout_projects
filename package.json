@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel ./exercise1/src/index.html --open",
+    "exercise2": "parcel ./exercise2/src/index.html --open",
+    "flexbox": "parcel ./flexbox/src/index.html --open",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

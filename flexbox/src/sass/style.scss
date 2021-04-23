@@ -1,0 +1,72 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-display {
+    flex-grow: 1;
+}
+
+.header {
+    background-color: pink;
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.lemoncode {
+    grid-area: lemoncode;
+}
+
+.user {
+    grid-area: user;
+}
+
+.business {
+    grid-area: business;
+}
+
+.culture {
+    grid-area: culture;
+}
+
+.gear {
+    grid-area: gear;
+}
+
+.ideas {
+    grid-area: ideas;
+}
+
+.science {
+    grid-area: science;
+}
+
+.security {
+    grid-area: security;
+}
+
+.transportation {
+    grid-area: transportation;
+}
+
+.footer {
+    font-size: 10px;
+}
+
+@mixin full-resolution() {
+    display: grid;
+    grid-template-areas:
+        "logo logo logo lemoncode lemoncode lemoncode user"
+        "business culture gear ideas science security transportation";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px;
+}
+
+@media screen and (min-width: 335.1px) {
+    .main-content {
+        @include full-resolution();
+    }
+}

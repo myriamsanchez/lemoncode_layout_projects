@@ -21,7 +21,7 @@
   "homepage": "https://github.com/myriamsanchez/lemoncode_layout_projects#readme",
   "dependencies": {},
   "devDependencies": {
-    "parcel": "^1.12.3",
+    "parcel": "^2.8.2",
     "sass": "^1.17.4"
   }
 }
